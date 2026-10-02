@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100dvh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+}
+
+.top-section {
+  display: flex;
+  padding: 5px;
+  background-color: #145936;
+}
+
+.top-section > div {
+  text-align: center;
+  flex: 1;
+}
+
+.top-section .left-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.top-section .left-section p {
+  color: white;
+  font-size: 12px;
+}
+
+.top-section .middle-section p {
+  color: white;
+  font-size: smaller;
+}
+
+.top-section .right-section select {
+  border: none;
+  background-color: #145936;
+  color: white;
+}
+
+/* lower section */
+
+.lower-section {
+  display: flex;
+  border-bottom: 1px solid rgb(187, 186, 186);
+}
+
+.lower-section > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  flex: 1;
+}
+
+.logo {
+  height: 65px;
+  margin-left: 40px;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+
+.lower-section .middle-section {
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.search-field {
+  padding: 4px 10px;
+  width: 200px;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  transition:
+    width 0.3s ease,
+    border-color 0.1s ease;
+}
+
+.search-field::placeholder {
+  color: gray;
+}
+
+.search-field:hover {
+  border: 1px solid gray;
+}
+
+.search-field:focus {
+  outline: none;
+  border: 1.5px solid #145936;
+  width: 89%;
+}
+
+.lower-section .right-section {
+  justify-content: flex-end;
+  gap: 10px;
+  padding-right: 10px;
+}
+
+.lower-section .right-section > div {
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.cart-container {
+  position: relative;
+}
+
+.cart-counter {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 15px;
+  height: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  background-color: #145936;
+  color: white;
+  font-size: 10px;
+}
+
+.profile-container {
+  display: flex;
+  gap: 4px;
+
+  margin-right: 20px;
+}
+
+.profile-container p {
+  font-size: 15px;
+}
+
+.lower-section .right-section > div:hover {
+  background-color: #1e985b;
+}
