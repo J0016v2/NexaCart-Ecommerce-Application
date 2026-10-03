@@ -1,9 +1,12 @@
 .footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  display: flex;
+  gap: 20px;
   padding: 40px 60px;
   background: #f5f5f5;
+}
+
+.footer > div {
+  flex: 1;
 }
 
 .footer-brand {
@@ -37,4 +40,30 @@
   align-self: center;
   color: #777;
   font-size: 14px;
+}
+
+/* responsiveness */
+
+@media (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-brand {
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    flex-direction: row;
+  }
+
+  .footer-brand-logo {
+    height: 70px;
+    width: 140px;
+    transform: translateX(-10px);
+  }
+
+  .footer-copyright {
+    align-self: flex-start;
+  }
 }
