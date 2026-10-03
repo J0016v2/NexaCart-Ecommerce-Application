@@ -109,12 +109,14 @@
   margin-top: 100px;
 }
 
-.category-title {
+h2 {
+  font-size: 2rem;
   font-weight: 650;
 }
 
 .category-card-grid {
   display: flex;
+  justify-content: space-between;
   gap: 25px;
 }
 
@@ -160,4 +162,107 @@
 }
 .c6 {
   background-image: url("../assets/catsnacks.jpg");
+}
+
+/* discover */
+
+.discover {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  margin: 40px;
+  margin-top: 200px;
+}
+
+.product-scroll-wrapper {
+  position: relative;
+}
+
+.discover-product-grid {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.product-scroll-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 100%;
+  background: linear-gradient(to right, transparent, white);
+  pointer-events: none;
+}
+
+.discover-product-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+
+  overflow-x: auto;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 0 0 28%;
+  height: 550px;
+
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  aspect-ratio: 1/1;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.1);
+}
+
+.product-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-title {
+  font-weight: 500;
+}
+
+.product-price {
+  font-weight: bold;
+}
+
+.product-overview-description {
+  font-size: 0.8rem;
+}
+
+.rating-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.rating-image {
+  height: 20px;
+}
+
+.rating-count {
+  font-size: 0.7rem;
+}
+
+.add-to-cart-btn {
+  align-self: flex-start;
+
+  padding: 10px 20px;
+
+  border: 1px solid black;
+  border-radius: 25px;
+
+  font-weight: 500;
 }
