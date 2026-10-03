@@ -171,6 +171,51 @@ function HomePage() {
           </div>
         </div>
       </section>
+
+      <section className="store">
+        <h2 className="store-title">Stores You’ll Love</h2>
+        <div className="store-grid">
+          <div className="store-card">
+            <img className="store-profile" src="/brand/coke.png" alt="seller" />
+            <h3 className="store-name">Coka Cola</h3>
+          </div>
+
+          <div className="store-card">
+            <img className="store-profile" src="/brand/coke.png" alt="seller" />
+            <h3 className="store-name">Coka Cola</h3>
+          </div>
+
+          <div className="store-card">
+            <img className="store-profile" src="/brand/coke.png" alt="seller" />
+            <h3 className="store-name">Coka Cola</h3>
+          </div>
+
+          <div className="store-card">
+            <img className="store-profile" src="/brand/coke.png" alt="seller" />
+            <h3 className="store-name">Coka Cola</h3>
+          </div>
+
+          <div className="store-card">
+            <img className="store-profile" src="/brand/coke.png" alt="seller" />
+            <h3 className="store-name">Coka Cola</h3>
+          </div>
+
+          <div className="store-card">
+            <img className="store-profile" src="/brand/coke.png" alt="seller" />
+            <h3 className="store-name">Coka Cola</h3>
+          </div>
+
+          <div className="store-card">
+            <img className="store-profile" src="/brand/coke.png" alt="seller" />
+            <h3 className="store-name">Coka Cola</h3>
+          </div>
+
+          <div className="store-card">
+            <img className="store-profile" src="/brand/coke.png" alt="seller" />
+            <h3 className="store-name">Coka Cola</h3>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
