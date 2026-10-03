@@ -49,23 +49,23 @@ function HomePage() {
       <section className="category">
         <h1 className="category-title">Shop Our categories</h1>
         <div className="category-card-grid">
-          <div className="category-card">
+          <div className="category-card c1">
             <h1 className="category-card-title">Furniture</h1>
           </div>
-          <div className="category-card">
-            <h1 className="category-card-title">Furniture</h1>
+          <div className="category-card c2 ">
+            <h1 className="category-card-title">Books</h1>
           </div>
-          <div className="category-card">
-            <h1 className="category-card-title">Furniture</h1>
+          <div className="category-card c3">
+            <h1 className="category-card-title">Bags</h1>
           </div>
-          <div className="category-card">
-            <h1 className="category-card-title">Furniture</h1>
+          <div className="category-card c4">
+            <h1 className="category-card-title">Appliances</h1>
           </div>
-          <div className="category-card">
-            <h1 className="category-card-title">Furniture</h1>
+          <div className="category-card c5">
+            <h1 className="category-card-title">Beauty</h1>
           </div>
-          <div className="category-card">
-            <h1 className="category-card-title">Furniture</h1>
+          <div className="category-card c6">
+            <h1 className="category-card-title">Snacks</h1>
           </div>
         </div>
       </section>
