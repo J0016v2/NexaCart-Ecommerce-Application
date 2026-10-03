@@ -1,6 +1,6 @@
 // components
 import Header from "../components/Header";
-import { useRef } from "react";
+import Footer from "../components/Footer";
 
 // logo and images
 import platform from "../assets/platform.png";
@@ -216,6 +216,8 @@ function HomePage() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </>
   );
 }

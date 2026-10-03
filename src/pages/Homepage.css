@@ -293,9 +293,12 @@ h2 {
   gap: 20px;
 
   padding: 30px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   border-radius: 10px;
   background-color: #f5f6f6;
+
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .store-card:hover {
@@ -309,4 +312,10 @@ h2 {
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
+
+  transition: all 0.1s ease;
+}
+
+.store-profile:hover {
+  transform: scale(1.15);
 }

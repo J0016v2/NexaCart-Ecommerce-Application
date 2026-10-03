@@ -7,6 +7,7 @@
 
 .top-section {
   display: flex;
+  align-items: center;
   padding: 5px;
   background-color: #145936;
 }
@@ -47,10 +48,18 @@
 }
 
 .lower-section > div {
+  min-width: 0;
+
   display: flex;
   flex-direction: row;
   align-items: center;
+}
 
+.lower-section .left-section {
+  flex: 0 0 auto;
+}
+
+.lower-section .right-section {
   flex: 1;
 }
 
@@ -61,14 +70,32 @@
   mix-blend-mode: multiply;
 }
 
-.lower-section .middle-section {
+.lower-section .right-section {
+  max-width: 100%;
+
   justify-content: flex-end;
+  gap: 10px;
+  padding-right: 10px;
+}
+
+.lower-section .right-section > div {
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.search-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
   gap: 10px;
 }
 
 .search-field {
   padding: 4px 10px;
   width: 200px;
+  max-width: 100%;
   border: 1px solid transparent;
   border-radius: 25px;
   transition:
@@ -87,19 +114,7 @@
 .search-field:focus {
   outline: none;
   border: 1.5px solid #145936;
-  width: 89%;
-}
-
-.lower-section .right-section {
-  justify-content: flex-end;
-  gap: 10px;
-  padding-right: 10px;
-}
-
-.lower-section .right-section > div {
-  padding: 5px 10px;
-  border-radius: 15px;
-  cursor: pointer;
+  width: 70%;
 }
 
 .cart-container {
@@ -135,6 +150,59 @@
   font-size: 15px;
 }
 
-.lower-section .right-section > div:hover {
+.burger-menu {
+  display: none;
+  padding: 5px;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.lower-section .right-section > *:not(:first-child):hover {
   background-color: #1e985b;
+  color: white;
+}
+
+/* responsive */
+
+@media (max-width: 767px) {
+  /* top section */
+  .top-section * {
+    font-size: 10px;
+  }
+  /* lower section */
+  .logo {
+    height: 45px;
+    margin-left: 10px;
+    object-fit: cover;
+  }
+
+  .search-field {
+    display: none;
+  }
+
+  .profile-container {
+    display: none;
+  }
+
+  .search-logo,
+  .cart-logo {
+    height: 25px;
+    border-radius: 50%;
+  }
+
+  .cart-counter {
+    font-size: 10px;
+    top: 10px;
+    right: 5px;
+  }
+  .burger-menu {
+    display: inline;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media (min-width: 1024px) {
 }

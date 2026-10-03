@@ -1,5 +1,11 @@
 // images and icons
-import { Call, Profile, SearchNormal2, ShoppingCart } from "reicon-react";
+import {
+  Call,
+  Profile,
+  SearchNormal2,
+  ShoppingCart,
+  Menu4,
+} from "reicon-react";
 // css
 import "./Header.css";
 
@@ -29,25 +35,32 @@ export default function Header() {
             <img className="logo" src="/logo.jpg" alt="logos" />
           </div>
 
-          <div className="middle-section">
-            <input
-              className="search-field"
-              type="text"
-              id="searchField"
-              placeholder="Search Product"
-            />
-            <SearchNormal2 color="#145936" />
-          </div>
-
           <div className="right-section">
+            <div className="search-container">
+              <input
+                className="search-field"
+                type="text"
+                id="searchField"
+                placeholder="Search Product"
+              />
+              <SearchNormal2 className="search-logo" color="#145936" />
+            </div>
+
             <div className="cart-container">
-              <ShoppingCart size={30} weight="filled" color="#145936" />
+              <ShoppingCart
+                className="cart-logo"
+                size={30}
+                weight="filled"
+                color="#145936"
+              />
               <p className="cart-counter">10</p>
             </div>
             <div className="profile-container">
-              <Profile color="#145936" />
-              <p>Account</p>
+              <Profile className="profile-logo" color="#145936" />
+              <p className="profile-text">Account</p>
             </div>
+
+            <Menu4 className="burger-menu" size={30} color="#145936" />
           </div>
         </div>
       </div>
