@@ -125,7 +125,7 @@ h2 {
   background-size: 100%;
 
   height: 250px;
-  flex: 1;
+  width: 25%;
   padding-top: 10px;
 
   border-radius: 15px;
@@ -318,4 +318,77 @@ h2 {
 
 .store-profile:hover {
   transform: scale(1.15);
+}
+
+/* responsiveness */
+
+@media (max-width: 767px) {
+  .hero {
+    min-height: 50vh;
+  }
+
+  .hero-content {
+    margin-left: 30px;
+  }
+
+  .hero-product-display-wrapper {
+    display: none;
+  }
+
+  .hero-title {
+    max-width: 400px;
+
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    max-width: 320px;
+
+    font-size: 1rem;
+  }
+
+  .hero-button {
+    padding: 13px 20px;
+
+    font-size: 1rem;
+  }
+
+  /* category */
+
+  .category {
+    gap: 25px;
+    margin: 50px 20px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .category-card-grid {
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  .category-card {
+    height: 290px;
+    width: 49%;
+  }
+
+  /* discover */
+  .discover {
+    margin-inline: 10px;
+  }
+
+  .product-card {
+    flex: 0 0 45%;
+  }
+
+  /* stores */
+  .store {
+    margin: 50px 10px;
+  }
+
+  .store-card {
+    width: 100%;
+  }
 }

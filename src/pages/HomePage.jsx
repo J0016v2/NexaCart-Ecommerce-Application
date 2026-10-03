@@ -168,6 +168,52 @@ function HomePage() {
               </div>
               <button className="add-to-cart-btn">Add to Cart</button>
             </div>
+
+            <div className="product-card">
+              <img
+                className="product-image"
+                src="/products/paperbag.png"
+                alt="paperbag"
+              />
+              <div className="product-title-wrapper">
+                <h3 className="product-title">Base Camp Duffel M</h3>
+                <p className="product-price">$200.00</p>
+              </div>
+              <p className="product-overview-description">
+                Table with air purifier, stained veneer/black
+              </p>
+              <div className="rating-wrapper">
+                <img className="rating-image" src={star} alt="star" />
+                <img className="rating-image" src={star} alt="star" />
+                <img className="rating-image" src={star} alt="star" />
+                <img className="rating-image" src={star} alt="star" />
+                <span className="rating-count">(123)</span>
+              </div>
+              <button className="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div className="product-card">
+              <img
+                className="product-image"
+                src="/products/paperbag.png"
+                alt="paperbag"
+              />
+              <div className="product-title-wrapper">
+                <h3 className="product-title">Base Camp Duffel M</h3>
+                <p className="product-price">$200.00</p>
+              </div>
+              <p className="product-overview-description">
+                Table with air purifier, stained veneer/black
+              </p>
+              <div className="rating-wrapper">
+                <img className="rating-image" src={star} alt="star" />
+                <img className="rating-image" src={star} alt="star" />
+                <img className="rating-image" src={star} alt="star" />
+                <img className="rating-image" src={star} alt="star" />
+                <span className="rating-count">(123)</span>
+              </div>
+              <button className="add-to-cart-btn">Add to Cart</button>
+            </div>
           </div>
         </div>
       </section>

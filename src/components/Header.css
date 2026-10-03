@@ -167,8 +167,9 @@
 
 @media (max-width: 767px) {
   /* top section */
-  .top-section * {
-    font-size: 10px;
+  .top-section *,
+  .top-section .left-section p {
+    font-size: 0.7rem;
   }
   /* lower section */
   .logo {
