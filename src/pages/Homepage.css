@@ -122,7 +122,7 @@ h2 {
 .category-card {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 110%;
 
   height: 250px;
   width: 25%;
@@ -372,6 +372,11 @@ h2 {
   .category-card {
     height: 290px;
     width: 49%;
+  }
+
+  .category-card-title {
+    justify-self: flex-start;
+    margin-left: 20px;
   }
 
   /* discover */
