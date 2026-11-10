@@ -1,0 +1,167 @@
+.shipping-modal-wrapper {
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+
+  background-color: rgba(0, 0, 0, 0.087);
+}
+
+.shipping-modal {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  background-color: white;
+}
+
+.shipping-modal-title {
+  width: 100%;
+
+  padding: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgb(229, 229, 229);
+
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.shipping-options-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-shipping-option {
+  width: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+
+  padding: 15px 25px;
+
+  border: 1px solid rgba(12, 12, 12, 0.091);
+
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.modal-shipping-option:after {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  right: 20px;
+  top: 35%;
+  content: "";
+
+  border: 1px solid rgba(0, 0, 0, 0.256);
+  border-radius: 50%;
+
+  background-color: rgb(243, 242, 242);
+}
+
+.modal-shipping-option:has(input:checked) {
+  border: 1px solid rgba(11, 206, 73, 0.233);
+  box-shadow: 5px 5px 10px 1px rgba(19, 125, 51, 0.196);
+}
+
+.modal-shipping-option:has(input:checked):after {
+  background-color: #43cc88;
+}
+
+.modal-shipping-option input {
+  display: none;
+}
+
+.shipping-modal-option-title-wrapper {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+}
+
+.shipping-modal-option-title-wrapper p {
+  font-weight: 500;
+}
+
+.modal-shipping-option > p {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.shipping-modal-option-title-wrapper span {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.shipping-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+
+  margin-top: 25px;
+  padding: 25px;
+  border-top: 1px solid rgb(229, 229, 229);
+}
+
+.shipping-modal-footer button {
+  padding: 10px 25px;
+
+  cursor: pointer;
+  transition: all 0.1s ease;
+  border: 1px solid transparent;
+}
+
+.shipping-modal-cancel-btn {
+  background-color: white;
+}
+
+.shipping-modal-cancel-btn:hover {
+  background-color: rgb(233, 232, 232);
+}
+
+.shipping-modal-confirm-btn {
+  background-color: #068043;
+  color: white;
+}
+
+.shipping-modal-confirm-btn:hover {
+  background-color: #10aa5d;
+}
+
+@media (max-width: 767px) {
+  .shipping-modal {
+    padding: 15px;
+  }
+  .shipping-modal-title {
+    font-size: 1rem;
+  }
+
+  .modal-shipping-option {
+    width: 300px;
+  }
+
+  .shipping-modal-option-title-wrapper p {
+    font-size: 0.8rem;
+  }
+
+  .modal-shipping-option > p {
+    font-size: 0.7rem;
+    color: gray;
+  }
+
+  .shipping-modal-option-title-wrapper span {
+    position: absolute;
+    right: 20%;
+    top: 40%;
+    font-size: 0.8rem;
+  }
+}

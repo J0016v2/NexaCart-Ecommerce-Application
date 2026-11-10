@@ -1,0 +1,235 @@
+.order-page {
+  display: flex;
+  justify-content: center;
+  padding: 40px 150px;
+
+  background-color: #f5f5f5;
+}
+
+.order-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* tab section */
+.order-page-tabs {
+  position: sticky;
+  top: 0px;
+  display: grid;
+  grid-template-columns: repeat(7, 150px);
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.139);
+}
+
+.order-page-tabs label {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+
+  cursor: pointer;
+}
+
+.order-page-tabs input {
+  display: none;
+}
+
+.order-page-tabs label:hover {
+  color: #399a69;
+}
+
+.order-page-tabs label:has(input[type="radio"]:checked) {
+  border-bottom: 1px solid #399a69;
+  color: #399a69;
+}
+
+/* orders */
+.orders-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.order {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.139);
+}
+
+.order-item-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.order-item-store-name {
+  font-weight: 500;
+}
+
+.order-item-header > a > button {
+  padding: 1px 5px;
+  border: 1px solid transparent;
+  background-color: #399a69;
+
+  font-size: 0.8rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.order-item-header > a > button:hover {
+  background-color: #4cb581;
+}
+
+.order-item-status {
+  margin-left: auto;
+  font-size: 1rem;
+  color: #399a69;
+}
+
+.ordered-item-products-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.ordered-item-product {
+  display: flex;
+  padding: 15px;
+  gap: 15px;
+  border-top: 1px solid rgb(228, 227, 227);
+  border-bottom: 1px solid rgb(228, 227, 227);
+}
+
+.ordered-item-product-image {
+  aspect-ratio: 1/1;
+  height: 90px;
+  border: 1px solid rgb(213, 213, 213);
+}
+
+.order-product-item-unit-price {
+  margin-left: auto;
+}
+
+.order-store-section-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.ordered-item-total-price-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.ordered-item-total-price-container span {
+  font-size: 1.5rem;
+  color: #399a69;
+}
+
+.order-store-section-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.order-store-section-actions button {
+  padding: 10px 25px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.order-rate-btn {
+  background-color: #399a69;
+  color: white;
+}
+
+.order-btn:hover {
+  background-color: #dedddd;
+}
+
+.order-rate-btn:hover {
+  background-color: #4cb581;
+}
+.order-id-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1rem;
+  color: gray;
+}
+
+@media (max-width: 767px) {
+  .order-page {
+    padding: 0px;
+  }
+  .order-page-wrapper {
+    gap: 10px;
+  }
+
+  .order-page-tabs {
+    max-width: 100vw;
+    grid-template-columns: repeat(7, 100px);
+    overflow-x: auto;
+  }
+
+  .order-page-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .order-page-tabs label {
+    font-size: 0.8rem;
+  }
+
+  .order {
+    padding: 20px 10px;
+  }
+
+  .order-item-store-name {
+    font-size: 0.8rem;
+  }
+
+  .order-item-status {
+    font-size: 0.8rem;
+  }
+
+  .ordered-item-product-image {
+    align-self: flex-start;
+    aspect-ratio: 1/1;
+    height: 50px;
+    border: 1px solid black;
+  }
+
+  .order-product-item-name {
+    font-size: 0.8rem;
+  }
+
+  .ordered-product-item-count {
+    font-size: 0.8rem;
+  }
+
+  .order-product-item-unit-price {
+    font-size: 0.8rem;
+  }
+
+  .ordered-item-total-price-container {
+    font-size: 0.8rem;
+  }
+
+  .ordered-item-total-price-container span {
+    font-size: 0.8rem;
+  }
+
+  .order-store-section-actions button {
+    padding: 5px 15px;
+    font-size: 0.8rem;
+  }
+
+  .order-id-wrapper {
+    font-size: 0.8rem;
+  }
+}

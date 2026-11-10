@@ -1,0 +1,114 @@
+.order-created-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.order-created-modal {
+  width: 100%;
+  max-width: 420px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  padding: 40px 30px;
+  background-color: white;
+  border-radius: 15px;
+
+  text-align: center;
+  animation: order-created-show 0.3s ease;
+}
+
+.order-created-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70px;
+  height: 70px;
+
+  background-color: #e5f5eb;
+  color: #145936;
+  border-radius: 50%;
+
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.order-created-modal h2 {
+  font-size: 1.5rem;
+  color: #145936;
+}
+
+.order-created-modal p {
+  font-size: 0.9rem;
+  color: rgb(100, 100, 100);
+  line-height: 1.6;
+}
+
+.order-created-actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.order-created-actions > * {
+  padding: 12px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.9rem;
+
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.order-created-view-btn {
+  background-color: #145936;
+  color: white;
+}
+
+.order-created-view-btn:hover {
+  background-color: #0d4025;
+}
+
+.order-created-close-btn {
+  background-color: white;
+  color: #145936;
+  border: 1px solid #145936;
+}
+
+.order-created-close-btn:hover {
+  background-color: #e5f5eb;
+}
+
+@keyframes order-created-show {
+  from {
+    opacity: 0;
+    transform: translateY(15px) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 767px) {
+  .order-created-modal {
+    padding: 30px 20px;
+  }
+
+  .order-created-modal h2 {
+    font-size: 1.3rem;
+  }
+}
