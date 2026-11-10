@@ -32,7 +32,10 @@ export default function Header() {
 
         <div className="lower-section">
           <div className="left-section">
-            <img className="logo" src="/logo.jpg" alt="logos" />
+            <img
+  src={`${import.meta.env.BASE_URL}logo.jpg`}
+  alt="NexaCart Logo"
+/>
           </div>
 
           <div className="right-section">
