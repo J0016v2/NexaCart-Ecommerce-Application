@@ -4,6 +4,8 @@ import { defineConfig } from "vitest/config";
 export default defineConfig({
   plugins: [react()],
 
+  base: "/NexaCart-Ecommerce-Application/",
+
   test: {
     environment: "jsdom",
     globals: true,
